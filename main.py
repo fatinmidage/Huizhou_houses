@@ -23,6 +23,5 @@ def get_huizhou_houses_address():
 
 # 按间距中的绿色按钮以运行脚本。
 if __name__ == '__main__':
-    help(save_file)
     get_huizhou_houses_address()
 
