@@ -16,7 +16,7 @@ def get_huizhou_houses_address():
     # dict_houses包含了所有的房屋信息，有重复项
     dict_houses = result['rows']
     house_data = {}
-    # house_data只包含房屋名称和地址，且无重复项
+    # 字典推导式，提取dict_data中的项目名称和地址两列数据，返回新字典。并且去重。
     house_data = {each_house['PROJECT']:each_house['ADDRESS'] for each_house in dict_houses}
 
     save_file('houses_data.txt', house_data)
